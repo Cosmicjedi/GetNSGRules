@@ -1,4 +1,4 @@
-﻿$azureSubs = Get-azSubscription |where State -eq "Enabled"
+﻿$azureSubs = Get-azSubscription |Where-Object State -eq "Enabled"
 # Path to directory where you want NSG outputs, 1 csv per subscription
 $exportpath = "$env:USERPROFILE\Documents\NSGs"
 
