@@ -1,6 +1,6 @@
 ﻿$azureSubs = Get-azSubscription |where State -eq "Enabled"
 # Path to directory where you want NSG outputs, 1 csv per subscription
-$exportpath = "C:\Users\joshuacadmin.TSCCORP\OneDrive - TechSmith Corporation (1)\NSGs"
+$exportpath = "C:\Users\username\documents\NSGs"
 
 foreach ($azureSub in $azureSubs) {
     Set-AzContext -Subscription $azureSub | Out-Null
